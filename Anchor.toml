@@ -1,15 +1,15 @@
 [toolchain]
-anchor_version = "0.30.1"
+anchor_version = "0.28.0"
 
 [features]
 resolution = true
 skip-lint = false
 
 [programs.devnet]
-agentlist = "A11st1111111111111111111111111111111111111"
+agentlist = "9jxUsiGTAzkXGHWLhckQ3c72ZVyCWKK1DD3Tt6gECtCm"
 
 [programs.mainnet]
-agentlist = "A11st1111111111111111111111111111111111111"
+agentlist = "9jxUsiGTAzkXGHWLhckQ3c72ZVyCWKK1DD3Tt6gECtCm"
 
 [registry]
 url = "https://api.apr.dev"

@@ -1,0 +1,23 @@
+[package]
+name = "agentlist"
+version = "0.1.0"
+description = "Agent-to-agent coordination marketplace"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+solana-program = "=1.17.28"
+borsh = "=0.10.3"
+thiserror = "=1.0.50"
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+
+[profile.release.build-override]
+opt-level = 3
+incremental = false
+codegen-units = 1
