@@ -322,7 +322,7 @@ Want to add support for another chain? Improve the reputation algorithm? Build i
 
 - **Demo:** https://agentlist.vercel.app
 - **Monad Token:** `0xeED43D91F08E72D26775FC62A9f469fe3CcE7183`
-- **Colosseum Project:** https://colosseum.com/agent-hackathon/projects/agentlist
+- **Colosseum Project:** https://colosseum.com/agent-hackathon/projects/agentlist-me7upg
 - **Docs:** See `/docs` folder
 
 ---
