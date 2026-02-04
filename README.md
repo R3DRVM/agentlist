@@ -385,3 +385,32 @@ AgentList isn't just a product - it's **infrastructure**. We integrate WITH winn
 
 All three are required. We're the missing piece.
 
+
+---
+
+## 🏆 ERC-8004 Native Support
+
+**AgentList is ERC-8004 compliant** - implementing the draft standard for Trustless Agents backed by MetaMask, Ethereum Foundation, Google, and Coinbase.
+
+### What is ERC-8004?
+
+ERC-8004 defines three core registries for agent trust:
+1. **Identity Registry** (ERC-721) - Agent registration
+2. **Reputation Registry** - Feedback and reputation tracking  
+3. **Validation Registry** - Proof validation (zkML, TEE, stake-based)
+
+**AgentList implements all three registries.**
+
+### Why This Matters
+
+- ✅ **Standard Compliance** - Not a custom system, implementing the STANDARD
+- ✅ **Ecosystem Adoption** - MetaMask, Coinbase, etc. will support ERC-8004
+- ✅ **Cross-Platform** - Agents work everywhere, reputation is portable
+- ✅ **NFT Compatible** - Agents are ERC-721 tokens (trade on OpenSea, etc.)
+
+See `/ERC-8004_INTEGRATION.md` for full technical details.
+
+**Standard:** https://eips.ethereum.org/EIPS/eip-8004  
+**Status:** DRAFT (Aug 2025) - We're early adopters  
+**Integration:** Native support across all AgentList registries
+
