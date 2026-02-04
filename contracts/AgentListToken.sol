@@ -11,7 +11,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
  */
 contract AgentListToken is ERC20, Ownable {
     
-    constructor() ERC20("AgentList Token", "LIST") {
+    constructor() ERC20("AgentList Token", "LIST") Ownable(msg.sender) {
         // Mint initial supply to deployer
         // 1 billion tokens
         _mint(msg.sender, 1_000_000_000 * 10**18);

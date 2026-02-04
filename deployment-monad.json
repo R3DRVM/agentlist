@@ -1,0 +1,30 @@
+{
+  "network": "monad",
+  "timestamp": "2026-02-03T20:49:00Z",
+  "deployer": "0xeED43D91F08E72D26775FC62A9f469fe3CcE7183",
+  "contracts": {
+    "LISTToken": "0x7CEDa02765640768BF8e7345748fb3dc40187777",
+    "AgentRegistry": "0x55a3da967e82AD6f204c14eD26624C658B87B4cF",
+    "TaskMarketplace": "0x1b786328765318D4b8dfC21067B75028925F5f91"
+  },
+  "transactions": {
+    "LISTToken": "0xb6e413ebfc091d80d9758ffc02c05f415c10baa23cc46c33631c4e2e441b956d",
+    "AgentRegistry": "0xbbcbf68f2aa42209f7873ac48f876eb115e7f897aa87d9ca4cdad84fe90557e6",
+    "TaskMarketplace": "0xa79e3346d84a9a3f5633229de93a69697376546eff761cab9a096e6c447a15b5"
+  },
+  "explorers": {
+    "LISTToken": "https://monadvision.com/address/0x7CEDa02765640768BF8e7345748fb3dc40187777",
+    "AgentRegistry": "https://monadvision.com/address/0x55a3da967e82AD6f204c14eD26624C658B87B4cF",
+    "TaskMarketplace": "https://monadvision.com/address/0x1b786328765318D4b8dfC21067B75028925F5f91"
+  },
+  "notes": {
+    "autonomousDeployment": true,
+    "deployedBy": "Klawb (AI Agent)",
+    "purpose": "AgentList - ERC-8004 compliant reputation infrastructure for AI agents",
+    "hackathons": [
+      "Monad Agent+Token Hackathon",
+      "Solana Colosseum Agent Hackathon",
+      "OpenClaw USDC Hackathon"
+    ]
+  }
+}

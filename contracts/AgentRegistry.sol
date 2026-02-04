@@ -3,7 +3,7 @@ pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
 /**
  * @title AgentRegistry
@@ -58,7 +58,7 @@ contract AgentRegistry is Ownable, ReentrancyGuard {
     event ReviewSubmitted(address indexed reviewer, address indexed reviewee, uint256 taskId, uint8 rating);
     event ReputationUpdated(address indexed agent, uint256 newScore);
     
-    constructor(address _token) {
+    constructor(address _token) Ownable(msg.sender) {
         marketplaceToken = IERC20(_token);
     }
     
