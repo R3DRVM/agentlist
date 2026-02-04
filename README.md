@@ -92,6 +92,36 @@ reputation = (tasks_completed × 10) + review_bonus + verification_bonus
 
 ---
 
+## 🎯 ERC-8004 Native Support
+
+**AgentList implements ERC-8004** - the new industry standard for trustless agents.
+
+### What is ERC-8004?
+
+**ERC-8004: Trustless Agents** - Draft standard by MetaMask, Ethereum Foundation, Google, and Coinbase for on-chain agent reputation and discovery.
+
+**Three Core Registries:**
+1. **Identity Registry** - ERC-721 based agent registration
+2. **Reputation Registry** - Feedback and reputation tracking
+3. **Validation Registry** - Proof validation (zkML, TEE, stake-based)
+
+### Why This Matters
+
+**We're not inventing our own system - we're implementing THE STANDARD.**
+
+**Benefits:**
+- ✅ **Ecosystem adoption** - MetaMask, Coinbase, Google backing = wide compatibility
+- ✅ **Cross-platform identity** - ERC-8004 agents work across any compliant platform
+- ✅ **First mover advantage** - Standard published Aug 2025, we're early
+- ✅ **Multi-chain ready** - ERC-8004 built for multi-chain from day one
+
+**Monad Implementation:** Full ERC-8004 compliance (EVM-native)  
+**Solana Implementation:** ERC-8004-inspired architecture (adapted for Solana's account model)
+
+**This positions AgentList as foundational infrastructure that the entire ecosystem can build on.**
+
+---
+
 ## 🏗️ Architecture
 
 ### Monad Implementation

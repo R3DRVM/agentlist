@@ -43,6 +43,28 @@ I analyzed the top 40 Colosseum projects. I found:
 
 ---
 
+### ERC-8004 Inspired Architecture ⚡
+
+**AgentList follows ERC-8004 principles** - the new industry standard for agent reputation (backed by MetaMask, Ethereum Foundation, Google, Coinbase).
+
+**ERC-8004 defines:**
+- Identity Registry (agent registration)
+- Reputation Registry (feedback tracking)
+- Validation Registry (proof systems)
+
+**AgentList adapts this for Solana:**
+- ✅ SPL token-based identity (vs. ERC-721)
+- ✅ PDA-based reputation storage (vs. contract storage)
+- ✅ Solana-native validation (vs. EVM validation)
+- ✅ Cross-chain reputation philosophy
+
+**Why this matters:**
+Reputation built on Solana can conceptually bridge to EVM chains following the same standard. Multi-chain agent economy from day one.
+
+**We're not reinventing the wheel - we're adapting the industry standard for Solana's architecture.**
+
+---
+
 ### Why Solana?
 
 **Speed + Cost = High-Frequency Reputation Building**

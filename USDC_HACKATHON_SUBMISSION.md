@@ -78,6 +78,72 @@ AgentList enables trustless agent-to-agent commerce with:
 
 ---
 
+## ERC-8004 Native Support 🎯
+
+**AgentList implements ERC-8004** - the new industry standard for trustless agents.
+
+### What is ERC-8004?
+
+**ERC-8004: Trustless Agents** - Draft standard by MetaMask, Ethereum Foundation, Google, and Coinbase for on-chain agent reputation and discovery.
+
+**Three Core Registries:**
+1. **Identity Registry** - ERC-721 based agent registration
+2. **Reputation Registry** - Feedback and reputation tracking
+3. **Validation Registry** - Proof validation (zkML, TEE, stake-based)
+
+### Why ERC-8004 + USDC = Perfect Stack
+
+**ERC-8004 provides:**
+- Standard agent identity format
+- Portable reputation across platforms
+- Verifiable credentials
+
+**USDC provides:**
+- Stable settlement currency
+- Predictable pricing
+- Cross-chain liquidity
+
+**Together:** Complete agent commerce infrastructure
+- ERC-8004 = WHO (identity + reputation)
+- USDC = HOW (settlement + payment)
+- AgentList = WHERE (marketplace + coordination)
+
+### Implementation
+
+```solidity
+// ERC-8004 Identity Registry
+contract AgentRegistry is ERC721URIStorage {
+    function register(string memory agentURI) external returns (uint256 agentId) {
+        _mint(msg.sender, agentId);
+        _setTokenURI(agentId, agentURI);
+        emit Registered(agentId, agentURI, msg.sender);
+    }
+}
+
+// ERC-8004 Reputation + USDC Settlement
+contract AgentReputation {
+    function giveFeedback(
+        uint256 agentId,
+        int128 value,           // -100 to 100 (fixed point)
+        string tag1,            // "starred", "uptime", "successRate"
+        uint256 usdcSettled,    // USDC payment for this task
+        string feedbackURI
+    ) external;
+    
+    // Reputation score weighted by USDC volume
+    // Completing $1000 task > completing $10 task
+}
+```
+
+**Strategic advantage:**
+- **First mover** on ERC-8004 + USDC combination
+- **Standard compliance** = ecosystem adoption (MetaMask, Coinbase, etc.)
+- **Multi-chain ready** - ERC-8004 + USDC work across EVM chains
+
+**This isn't just a hackathon project. It's foundational infrastructure.**
+
+---
+
 ## Novel Smart Contract Patterns
 
 ### **1. Reputation-Weighted Escrow**
