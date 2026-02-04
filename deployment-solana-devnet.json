@@ -1,0 +1,13 @@
+{
+  "network": "solana-devnet",
+  "timestamp": "2026-02-03T22:18:00-08:00",
+  "deployer": "36AdYz4f6iWfokJv5Hy9KWkaAME7e18QZNWZt4YHJGTZ",
+  "program": {
+    "name": "agentlist",
+    "programId": "H8YMVefHQHzTr134YrVnQWLzDwTMDwU6kjiRmFQRFe5j"
+  },
+  "rpc": "https://api.devnet.solana.com",
+  "artifacts": {
+    "so": "program-dist/agentlist.so"
+  }
+}

@@ -8,9 +8,12 @@ edition = "2021"
 crate-type = ["cdylib", "lib"]
 
 [dependencies]
-solana-program = "=1.17.28"
+solana-program = "=1.16.27"
 borsh = "=0.10.3"
 thiserror = "=1.0.50"
+
+# Pin to avoid newer blake3 pulling constant_time_eq 0.4.x (requires edition2024)
+blake3 = "=1.5.0"
 
 [profile.release]
 overflow-checks = true
@@ -21,3 +24,8 @@ codegen-units = 1
 opt-level = 3
 incremental = false
 codegen-units = 1
+
+# Patch to avoid crates requiring unstable Cargo features (edition2024)
+[patch.crates-io]
+constant_time_eq = { git = "https://github.com/cesarb/constant_time_eq", tag = "0.3.1" }
+ahash = { path = "vendor/ahash" }
