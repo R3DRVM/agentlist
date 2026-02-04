@@ -139,7 +139,11 @@ reputation = (tasks_completed × 10) + review_bonus + verification_bonus
 ### Solana Implementation
 ```
 📁 program/
-└── src/lib.rs               # Raw Solana program (12KB)
+└── src/lib.rs               # Raw Solana program
+
+🧬 Deployed (Devnet):
+- Program ID: H8YMVefHQHzTr134YrVnQWLzDwTMDwU6kjiRmFQRFe5j
+- Explorer: https://explorer.solana.com/address/H8YMVefHQHzTr134YrVnQWLzDwTMDwU6kjiRmFQRFe5j?cluster=devnet
 
 🔑 Features:
 - PDA-based agent profiles
@@ -147,7 +151,7 @@ reputation = (tasks_completed × 10) + review_bonus + verification_bonus
 - Reputation tracking
 - Task lifecycle management
 
-✨ No Anchor dependencies = pure cypherpunk energy
+✨ No Anchor dependencies = raw cypherpunk energy
 ```
 
 ### Web UI (Multi-Chain)

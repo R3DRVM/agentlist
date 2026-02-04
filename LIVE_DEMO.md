@@ -10,7 +10,9 @@
 
 ### 1. Multi-Chain Selector
 - 🟣 **Monad** - EVM with $LIST token
-- 🟠 **Solana** - Raw program with SOL escrow
+- 🟠 **Solana** - Raw program deployed to Devnet + SOL escrow
+  - Program ID: `H8YMVefHQHzTr134YrVnQWLzDwTMDwU6kjiRmFQRFe5j`
+  - Explorer: https://explorer.solana.com/address/H8YMVefHQHzTr134YrVnQWLzDwTMDwU6kjiRmFQRFe5j?cluster=devnet
 
 **Switch between chains seamlessly** - same UI, different backends.
 
